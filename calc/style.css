@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Varela+Round&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bg.jpg);
+}
+
+
+
+.calc {
+    box-shadow: 0 0 60px gray;
+    /* border-radius: 20px; */
+    padding: 20px;
+    backdrop-filter: blur(15px);
+    z-index: 10;
+    transition: all 1.5s;
+}
+
+.calc:hover {
+    background: #8080801a;
+}
+
+
+input {
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 15px;
+    margin-bottom: 45px;
+    background: rgb(199 199 199 / 60%);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    border-radius: 20px;
+    color: black;
+    transition: 2s;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: black;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background: transparent;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 20px gray;
+}
+
+.equalbtn {
+    background: rgb(199 199 199 / 82%);
+}
+
